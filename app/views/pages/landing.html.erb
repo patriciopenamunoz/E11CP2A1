@@ -1,0 +1,16 @@
+<h1>Students</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>Name</td><td>Age</td><td>Email</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @students.each do |e| %>
+    <tr>
+      <td><%= e.name %></td><td><%= e.age %></td><td><%= e.email %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
